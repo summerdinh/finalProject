@@ -1,5 +1,4 @@
-# finalProject
-## Ha Dinh's Final Project - Who's That Pokemon?
+# Ha Dinh's Final Project - Who's That Pokemon?
 
 Are you a Pokémon Master? Put your knowledge to the test and see if you can top your friends' scores.
 
