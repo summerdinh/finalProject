@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/fragment_scoreboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    tools:context=".ui.scoreboard.ScoreboardFragment">
+
+    <!--ADD PLAYER-->
+    <RelativeLayout
+        android:id="@+id/addPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/textViewAddPlayer"
+            android:layout_width="240dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:text="@string/players"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/insertButton"
+            android:background="@drawable/edittext_border_style"
+            android:hint="@string/enter_name_here"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/insertButton"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="@string/add_player" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addPlayer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/titlesWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nameTitle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40"
+                android:text="@string/name_title"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/pointsTitle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="40"
+                android:text="@string/points_title"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/itemsListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titlesWrapper"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
