@@ -17,6 +17,9 @@ You can see the scoreboard under the Scoreboard menu tab with all of the records
 
 Moreover, you can add a new player to the game and choose to play as the newly created player.
 
+## Installation Guide
+Download and install "app-release.apk" under finalProject/app/release/
+
 ## Screenshots
 
 ![Capture 1](Capture1.PNG)
