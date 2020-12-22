@@ -1,5 +1,6 @@
 # Ha Dinh's Final Project - Who's That Pokemon?
 
+## Description
 Are you a Pokémon Master? Put your knowledge to the test and see if you can top your friends' scores.
 
 Upon starting the game, you'll be presented with the game board, which contains the following features:
@@ -20,7 +21,6 @@ Moreover, you can add a new player to the game and choose to play as the newly c
 Download and install "app-release.apk" under finalProject/app/release/
 
 ## Screenshots
-
 ![Capture 1](Capture1.PNG)
 ![Capture 2](Capture2.PNG)
 ![Capture 3](Capture3.PNG)
